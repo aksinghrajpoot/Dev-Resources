@@ -1,16 +1,85 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: roboto;
+      font-weight: 300;
+      src: url(/assets/fonts/Roboto/Roboto-Light.ttf) format("woff");
+    }
+
+    @font-face {
+      font-family: roboto;
+      font-weight: 400;
+      src: url(/assets/fonts/Roboto/Roboto-Regular.ttf) format("woff");
+    }
+
+    @font-face {
+      font-family: roboto;
+      font-weight: 500;
+      src: url(/assets/fonts/Roboto/Roboto-Medium.ttf) format("woff");
+    }
+    
+    @font-face {
+      font-family: roboto;
+      font-weight: 700;
+      src: url(/assets/fonts/Roboto/Roboto-Bold.ttf) format("woff");
+    }
+   
+
+  }
+  body{
+    background-color: #ffffff;
+    font-family: 'roboto';
+    user-select: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{width: 6px;height: 4px;}
+::-webkit-scrollbar-track{background-color: #ececec;overflow: hidden;border-radius: 200px}
+::-webkit-scrollbar-thumb{background-color: #cbcbcb;border-radius: 200px}
+
+@layer utilities{
+    .info{
+        @apply bg-blue-200 text-sky-800 rounded-sm py-2 px-3 ease-linear duration-100 shadow-gray-200;
+    }
+    .info:hover{
+        @apply shadow-lg;
+    }
+    .nav_main{
+        @apply md:transform-none ease-linear md:animate-none md:transition-none duration-200 fixed  md:relative top-0 md:top-0 left-0 w-2/3 md:w-auto h-screen md:h-auto shadow-md md:shadow-none bg-white md:bg-transparent flex md:mr-auto md:px-6 z-50 ;
+    }
+    .nav_ul{
+        @apply flex w-full md:w-auto flex-col md:flex-row md:space-x-3  md:px-0 py-4 md:py-0 md:space-y-0 text-dark uppercase font-medium  md:text-sm overflow-y-auto md:overflow-y-hidden;
+    }
+    @media only screen and (max-width:767px){
+      .nav_ul li{
+        @apply border-b border-black border-opacity-10 px-4 py-2 font-normal bg-gray-50;
+      }
+    }
+    
+    .gd-primary{
+      @apply from-alpha  to-beta;
+    }
+    .gd-secondary{
+      @apply from-[#ea1b77] via-[#2173cf] to-[#06a26c];
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+#card-thumb{   -webkit-animation: animateBg 2s linear infinite;
+  animation: animateBg 1s linear forwards infinite;
+  box-shadow: inset 0 0 8px 100px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  background-image: linear-gradient(90deg,#ebebeb,#b9b9b9,#ebebeb,#b9b9b9);
+  background-size: 300% 100%;
 }
 
-* {
-  box-sizing: border-box;
+@keyframes animateBg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
+

@@ -1,0 +1,24 @@
+.categories {
+    position: relative;
+}
+
+.categories span {
+    --color:rgb(184, 31, 255);
+    color: var(--color);
+    border: 1px solid var(--color);
+    border-radius: 20px;
+    padding: 2px 10px;
+    font-size: 14px;
+    gap: 5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: all 0.2s;
+    flex-shrink:0;
+
+}
+.categories span:hover,.categories span.active{
+    background-color: var(--color);
+    color: #ffffff;
+    box-shadow: 0 2px 8px 4px rgba(184,31,255,0.1);
+}

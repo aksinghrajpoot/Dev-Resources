@@ -1,0 +1,44 @@
+[
+    {
+        "name": "1001 Fonts",
+        "categories": "fonts",
+        "description": "24,262 free fonts in 13,112 families · Free licenses for commercial use · Direct font downloads · Mac · Windows · Linux.",
+        "website": "1001fonts.com"
+    },
+    {
+        "name": "10FastFingers",
+        "description": "10FastFingers is a website which offers users a way to test and improve their typing speed. Improve your Typing Speed with our Typing Games.",
+        "categories": "typing",
+        "website": "10fastfingers.com"
+    },
+    {
+        "name": "18F Accessibility Guide",
+        "categories": "accessibility",
+        "description": "A simple checklist for determining if your site is accessible.",
+        "website": "accessibility.18f.gov"
+    },
+    {
+        "name": "1LOC",
+        "description": "Favorite JavaScript Utilities in single line of code! No more!",
+        "categories": "javascript",
+        "website": "1loc.dev"
+    },
+    {
+        "name": "30 seconds of code",
+        "categories": "codeSnippets",
+        "description": "Browse 1078 short code snippets for all your development needs on 30 seconds of code.",
+        "website": "30secondsofcode.org"
+    },
+    {
+        "name": "4 day week",
+        "categories": "boards",
+        "description": "Software jobs with a better work / life balance.",
+        "website": "4dayweek.io"
+    },
+    {
+        "name": "99designs",
+        "categories": "freelancing",
+        "description": "The global creative platform for custom graphic design: logos, websites and more. Hire a talented designer or start a design contest. 500k+ happy customers have used 99designs to grow their business.",
+        "website": "99designs.com"
+    }
+]

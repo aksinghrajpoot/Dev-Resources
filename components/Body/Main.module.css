@@ -1,0 +1,17 @@
+.card-thumb {
+  -webkit-animation: animateBg 2s linear infinite;
+  animation: animateBg 1s linear forwards infinite;
+  box-shadow: inset 0 0 8px 100px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  background-image: linear-gradient(90deg, #ebebeb, #b9b9b9, #ebebeb, #b9b9b9);
+  background-size: 300% 100%;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

@@ -1,0 +1,51 @@
+/* Hedaer Element */
+.header{
+    box-shadow: 0 2px 6px 2px rgba(0 0 0 / 10%);
+}
+
+/* Hamburger Menu Start*/
+.menu_bar {
+    position: relative;
+}
+
+.menu_bar span {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: .2s ease;
+}
+
+.menu_bar-clicked span:nth-child(1) {
+    transform: rotate(45deg);
+    /* position: absolute;*/
+    top: 7.5px;
+}
+
+.menu_bar-clicked span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu_bar-clicked span:nth-child(3) {
+    transform: rotate(-45deg);
+    /* position: absolute;*/
+    bottom: 7.5px;
+}
+/* Hamburger Menu End*/
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(234 255 254 / 23%);
+    z-index: 1;
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+ }
+
+
