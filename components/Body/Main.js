@@ -31,7 +31,7 @@ function Articles({ post }) {
             <div id='card-thumb' className={`${Styles1.thumb} bg-white-100 card-thumb relative aspect-[4/2.1]`}>
                 {/* <Image title={name} alt={name} src={`https://s0.wp.com/mshots/v1/https%3A%2F%2F${database.url}?w=1980&h=700`} layout="fill" objectFit="cover" /> */}
                 <Image title={`this is name`} alt={`this is name`} src={`https://v1.screenshot.11ty.dev/https%3A%2F%2F${website}%0A/opengraph/smaller`} layout="fill" objectFit="cover" />
-                <a href={`//${`this is website`}`} target='_'><button className="bg-green-600 bg-opacity-80 transition-all text-light hover:bg-beta hover:bg-opacity-75 hover:text-white py-[2px] px-3 text-[14px] absolute right-0 bottom-0 border border-gray-300">Preview</button></a>
+                <a href={`//${website}`} target='_'><button className="bg-green-600 bg-opacity-80 transition-all text-light hover:bg-beta hover:bg-opacity-75 hover:text-white py-[2px] px-3 text-[14px] absolute right-0 bottom-0 border border-gray-300">Preview</button></a>
             </div>
             <div className="card-body relative pt-2 p-5 md:p-4 border-t border-red-300">
                 <h5 className="card-title external_link font-medium">{name}</h5>
